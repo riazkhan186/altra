@@ -1,0 +1,100 @@
+// Services Area Start
+.services {
+  background-color: var(--blackcolor);
+}
+
+.service-header-area {
+  .section-heading {
+    h6 {
+      color: var(--whiteColor);
+      margin-bottom: 5px;
+      font: {
+        size: 18px;
+        weight: 400;
+        family: var(--primaryColor);
+      };
+    }
+    h3 {
+      line-height: 65.5px;
+      color: var(--whiteColor);
+      font: {
+        size: 60px;
+        weight: 500;
+        family: var(--primaryFont);
+      };
+    }
+  }
+  p {
+    max-width: 505px;
+    color: #999999;
+    margin: {
+      left: auto;
+      right: auto;
+    };
+    span {
+      color: var(--whiteColor);
+    }
+  }
+  .default-button {
+    span {
+      max-width: 85px;
+      color: #999999;
+      position: relative;
+      iconify-icon {
+        position: absolute;
+        right: 0;
+        top: 5px;
+      }
+    }
+  }
+
+}
+
+.services-card {
+  position: relative;
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  };
+  border-top: 1px solid #eeeeee36;
+  h6 {
+    color: var(--whiteColor);
+    font: {
+      size: 28px;
+      weight: 400;
+      family: var(--primaryFont)
+    };
+  }
+  h4 {
+    a {
+      color: var(--whiteColor);
+      font: {
+        size: 28px;
+        weight: 400;
+        family: var(--primaryFont)
+      };
+    }
+  }
+  p {
+    color: #999999;
+    padding: {
+      left: 10px;
+      right: 10px;
+    };
+  }
+  .details-link {
+    font-size: 48px;
+    color: #999999;
+    transition: .5s ease-in-out;
+  }
+  &:hover {
+    .details-link {
+      color: var(--whiteColor);
+      transform: translate(10px, -10px);
+    }
+  }
+}
+
+.last-service-card {
+  border-bottom: 1px solid #eeeeee36;
+}

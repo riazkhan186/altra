@@ -1,0 +1,42 @@
+.about-heading-area {
+  h3 {
+    max-width: 770px;
+    line-height: 65.5px;
+    color: var(--blackColor);
+    font: {
+      size: 60px;
+      weight: 500;
+      family: var(--primaryFont);
+    };
+    margin: {
+      left: auto;
+      right: auto;
+    };
+  }
+}
+
+.about-content-area {
+  margin-top: 30px;
+  .about-first-img {
+    margin-top: 60px;
+  }
+  .about-middle-area {
+    max-width: 440px;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 120px;
+    };
+    p {
+      color: var(--textCOlor);
+      margin-bottom: 30px;
+      font: {
+        size: 18px;
+        weight: 400;
+      };
+    }
+  }
+  .about-last-img {
+    transform: translateY(-70px);
+  }
+}

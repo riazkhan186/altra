@@ -1,0 +1,19 @@
+// Service Slider area
+.service-slider {
+  background-color: var(--yellowGreen);
+  padding: 26px 0;
+  .service-slide {
+    h6 {
+      text-transform: uppercase;
+      text-align: center;
+      font: {
+        size: 20px;
+        weight: 400;
+        family: var(--primaryFont);
+      }
+    }
+  }
+  .service-slider-content {
+    transition-timing-function: linear;
+  }
+}

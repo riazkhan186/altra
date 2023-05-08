@@ -1,0 +1,139 @@
+.banner-wrapper {
+  overflow: hidden;
+  position: relative;
+  background: {
+    image: url("../images/banner/banner-bg.jpg");
+    size: cover;
+    position: 50% 100%;
+    repeat: no-repeat;
+  }
+  // animation: banner-bg-animate 5s linear infinite;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+}
+
+.banner-content {
+  position: relative;
+  padding: {
+    top: 200px;
+    bottom: 80px
+  };
+}
+
+// Banner Moto Area
+.banner-moto-area {
+  max-width: 300px;
+  padding-bottom: 15px;
+  display: inline-block;
+  border-bottom: 1px solid var(--whiteColor);
+  position: relative;
+  p {
+    color: var(--whiteColor);
+    margin-bottom: 0;
+    font: {
+      size: 20px;
+      weight: 400;
+    };
+  }
+  iconify-icon{
+    font-size: 42px;
+    color: var(--whiteColor);
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+}
+
+// Banner Title area
+.banner-title-area {
+  max-width: 1010px;
+  position: relative;
+  margin:  {
+    top: 65px;
+    bottom: 75px;
+  };
+  h1 {
+    line-height: 1;
+    position: relative;
+    color: var(--whiteColor);
+    font: {
+      size: 150px;
+      weight: 600;
+      family: var(--primaryFont)
+    };
+    span {
+      line-height: 1;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 8px 15px 10px;
+      color: var(--whiteColor);
+      border: 5px solid var(--whiteColor);
+      position: absolute;
+      left: 101%;
+      top: 85px;
+      font: {
+        size: 24px;
+        weight: 600;
+      };
+    }
+  }
+  p {
+    max-width: 410px;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    line-height: 25px;
+    color: #A8A8A8;
+    font: {
+      size: 18px;
+      weight: 400;
+    };
+    span {
+      color: var(--whiteColor);
+    }
+  }
+}
+
+// Banner Testimonial area
+.banner-testimonial {
+  max-width: 155px;
+  color: var(--whiteColor);
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  h6 {
+    line-height: 25px;
+    margin-bottom: 20px;
+    font: {
+      size: 50px;
+      weight: 400;
+    };
+  }
+}
+
+
+
+
+.second-wrapper {
+  height: 100vh;
+}
+
+@keyframes banner-bg-animate {
+  50% {
+    background-position: 100% 100%;
+  }
+}
